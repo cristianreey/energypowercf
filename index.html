@@ -136,6 +136,12 @@
     display: block !important;
   }
 
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Invierte el color para que sea negro */
+}
+
+
     
   </style>
 
@@ -367,117 +373,199 @@
       <div id="partidosCarousel" class="carousel slide mt-4" data-bs-ride="false">
         <div class="carousel-inner">
           <div class="carousel-item ">
-            <div class="card text-center p-3">
+            <div class="card text-center p-3 bg-light shadow">
+              <!-- Fecha y día -->
+              <div class="d-flex justify-content-start align-items-center bg-primary text-white p-2 rounded-top" style="background: linear-gradient(45deg, #F21E90, #C71585, #F21E90); color: white; font-weight: bold;">
+                  <h2 class="m-0 px-2">09</h2>
+                  <div class="text-left">
+                      <h6 class="m-0 text-uppercase">Domingo</h6>
+                      <p class="m-0">Febrero</p>
+                  </div>
+              </div>
+          
+              <!-- Competición -->
+              <div class="mt-2">
+                  <h5 class="text-danger font-weight-bold">LIGA REGULAR SENIOR</h5>
+                  <p class="text-muted small">DIVISIÓN DE PLATA</p>
+              </div>
+          
+              <!-- Resultado -->
               <div class="d-flex justify-content-center align-items-center w-100">
-                <img src="assets/img/barberiaCardenas.svg" alt="Escudo Equipo 1" class="img-fluid w-35 w-md-25">
-                <div class="result-box shadow p-3 rounded bg-light">
-                  <h4 class="m-0">5</h4>
-                </div>
-                <h4 class="m-0" style="padding: 3px;">-</h4>
-                <div class="result-box shadow p-3 rounded bg-light">
-                  <h4 class="m-0">0</h4>
-                </div>
-                <img src="assets/img/2.png" alt="Escudo Equipo 2" class="img-fluid w-35 w-md-25">
+                  <img src="assets/img/barberiaCardenas.svg" alt="Escudo Equipo 1" class="img-fluid w-25">
+                  <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
+                      <h4 class="m-0">5</h4>
+                  </div>
+                  <h4 class="m-0">-</h4>
+                  <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
+                      <h4 class="m-0">0</h4>
+                  </div>
+                  <img src="assets/img/2.png" alt="Escudo Equipo 2" class="img-fluid w-25">
               </div>
-              <div class="result-box shadow p-3 rounded bg-light">
-                <p class="mt-2"><i class="fas fa-calendar-alt"></i><b>14/01/2025</b></p>
+          
+              <!-- Información adicional -->
+              <div class="mt-2">
+                  <h5 class="font-weight-bold"> Barbería Cárdenas Moreno - The Rose King's</h5>
+                  <p class="text-muted small">Instalaciones deportivas El Juncal</p>
               </div>
-              <div class="result-box shadow p-3 rounded bg-light">
-                <p><i class="fas fa-map-marker-alt"></i><b>Instalaciones deportivas El Juncal</b></p>
-              </div>
-            </div>
+          </div>
+          
           </div>
           <div class="carousel-item">
-            <div class="card text-center p-3">
-              <div class="d-flex justify-content-around align-items-center w-100">
-                <img src="assets/img/2.png" alt="Escudo Equipo 1" class="img-fluid w-35 w-md-25">
-                <div class="result-box shadow p-3 rounded bg-light">
-                  <h4 class="m-0">3</h4>
-                </div>
-                <h4 class="m-0">-</h4>
-                <div class="result-box shadow p-3 rounded bg-light">
-                  <h4 class="m-0">4</h4>
-                </div>
-                <img src="assets/img/interxerez (1).svg" alt="Escudo Equipo 2" class="img-fluid w-35 w-md-25">
+            <div class="card text-center p-3 bg-light shadow">
+              <!-- Fecha y día -->
+              <div class="d-flex justify-content-start align-items-center bg-primary text-white p-2 rounded-top" style="background: linear-gradient(45deg, #F21E90, #C71585, #F21E90); color: white; font-weight: bold;">
+                  <h2 class="m-0 px-2">14</h2>
+                  <div class="text-left">
+                      <h6 class="m-0 text-uppercase">Martes</h6>
+                      <p class="m-0">Enero</p>
+                  </div>
               </div>
-              <div class="result-box shadow p-3 rounded bg-light">
-                <p class="mt-2"><i class="fas fa-calendar-alt"></i><b>21/01/2025</b></p>
+          
+              <!-- Competición -->
+              <div class="mt-2">
+                  <h5 class="text-danger font-weight-bold">LIGA REGULAR SENIOR</h5>
+                  <p class="text-muted small">DIVISIÓN DE PLATA</p>
               </div>
-              <div class="result-box shadow p-3 rounded bg-light">
-                <p><i class="fas fa-map-marker-alt"></i><b>Instalaciones deportivas El Juncal</b></p>
+          
+              <!-- Resultado -->
+              <div class="d-flex justify-content-center align-items-center w-100">
+                  <img src="assets/img/2.png" alt="Escudo Equipo 1" class="img-fluid w-25">
+                  <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
+                      <h4 class="m-0">3</h4>
+                  </div>
+                  <h4 class="m-0">-</h4>
+                  <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
+                      <h4 class="m-0">4</h4>
+                  </div>
+                  <img src="assets/img/interxerez (1).svg" alt="Escudo Equipo 2" class="img-fluid w-25">
               </div>
-            </div>
+          
+              <!-- Información adicional -->
+              <div class="mt-2">
+                  <h5 class="font-weight-bold"> The Rose King's - Inter Xerez C.F</h5>
+                  <p class="text-muted small">Instalaciones deportivas El Juncal</p>
+              </div>
+          </div>
           </div>
           <div class="carousel-item">
-            <div class="card text-center p-3">
-              <div class="d-flex justify-content-around align-items-center w-100">
-                <img src="assets/img/seleccioncolombiana.svg" alt="Escudo Equipo 1" class="img-fluid w-35 w-md-25">
-                <div class="result-box shadow p-3 rounded bg-light">
-                  <h4 class="m-0">5</h4>
-                </div>
-                <h4 class="m-0">-</h4>
-                <div class="result-box shadow p-3 rounded bg-light">
-                  <h4 class="m-0">0</h4>
-                </div>
-                <img src="assets/img/2.png" alt="Escudo Equipo 2" class="img-fluid w-35 w-md-25">
+            <div class="card text-center p-3 bg-light shadow">
+              <!-- Fecha y día -->
+              <div class="d-flex justify-content-start align-items-center bg-primary text-white p-2 rounded-top" style="background: linear-gradient(45deg, #F21E90, #C71585, #F21E90); color: white; font-weight: bold;">
+                  <h2 class="m-0 px-2">28</h2>
+                  <div class="text-left">
+                      <h6 class="m-0 text-uppercase">Martes</h6>
+                      <p class="m-0">Enero</p>
+                  </div>
               </div>
-              <div class="result-box shadow p-3 rounded bg-light">
-                <p class="mt-2"><i class="fas fa-calendar-alt"></i><b>28/01/2025</b></p>
+          
+              <!-- Competición -->
+              <div class="mt-2">
+                  <h5 class="text-danger font-weight-bold">LIGA REGULAR SENIOR</h5>
+                  <p class="text-muted small">DIVISIÓN DE PLATA</p>
               </div>
-              <div class="result-box shadow p-3 rounded bg-light">
-                <p><i class="fas fa-map-marker-alt"></i><b>Instalaciones deportivas El Juncal</b></p>
+          
+              <!-- Resultado -->
+              <div class="d-flex justify-content-center align-items-center w-100">
+                  <img src="assets/img/seleccioncolombiana.svg" alt="Escudo Equipo 1" class="img-fluid w-25">
+                  <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
+                      <h4 class="m-0">5</h4>
+                  </div>
+                  <h4 class="m-0">-</h4>
+                  <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
+                      <h4 class="m-0">0</h4>
+                  </div>
+                  <img src="assets/img/2.png" alt="Escudo Equipo 2" class="img-fluid w-25">
               </div>
-            </div>
+          
+              <!-- Información adicional -->
+              <div class="mt-2">
+                  <h5 class="font-weight-bold"> Selección Colombiana F.C - The Rose King's</h5>
+                  <p class="text-muted small">Instalaciones deportivas El Juncal</p>
+              </div>
+          </div>
           </div>
           <div class="carousel-item">
-            <div class="card text-center p-3">
-              <div class="d-flex justify-content-around align-items-center w-100">
-                <img src="assets/img/alianza.svg" alt="Escudo Equipo 1" class="img-fluid w-35 w-md-25">
-                <div class="result-box shadow p-3 rounded bg-light">
-                  <h4 class="m-0">1</h4>
-                </div>
-                <h4 class="m-0">-</h4>
-                <div class="result-box shadow p-3 rounded bg-light">
-                  <h4 class="m-0">1</h4>
-                </div>
-                <img src="assets/img/2.png" alt="Escudo Equipo 2" class="img-fluid w-35 w-md-25">
+            <div class="card text-center p-3 bg-light shadow">
+              <!-- Fecha y día -->
+              <div class="d-flex justify-content-start align-items-center bg-primary text-white p-2 rounded-top" style="background: linear-gradient(45deg, #F21E90, #C71585, #F21E90); color: white; font-weight: bold;">
+                  <h2 class="m-0 px-2">11</h2>
+                  <div class="text-left">
+                      <h6 class="m-0 text-uppercase">Martes</h6>
+                      <p class="m-0">Febrero</p>
+                  </div>
               </div>
-              <div class="result-box shadow p-3 rounded bg-light">
-                <p class="mt-2"><i class="fas fa-calendar-alt"></i><b>28/01/2025</b></p>
+          
+              <!-- Competición -->
+              <div class="mt-2">
+                  <h5 class="text-danger font-weight-bold">LIGA REGULAR SENIOR</h5>
+                  <p class="text-muted small">DIVISIÓN DE PLATA</p>
               </div>
-              <div class="result-box shadow p-3 rounded bg-light">
-                <p><i class="fas fa-map-marker-alt"></i><b>Instalaciones deportivas El Juncal</b></p>
+          
+              <!-- Resultado -->
+              <div class="d-flex justify-content-center align-items-center w-100">
+                  <img src="assets/img/alianza.svg" alt="Escudo Equipo 1" class="img-fluid w-25">
+                  <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
+                      <h4 class="m-0">1</h4>
+                  </div>
+                  <h4 class="m-0">-</h4>
+                  <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
+                      <h4 class="m-0">1</h4>
+                  </div>
+                  <img src="assets/img/2.png" alt="Escudo Equipo 2" class="img-fluid w-25">
               </div>
-            </div>
+          
+              <!-- Información adicional -->
+              <div class="mt-2">
+                  <h5 class="font-weight-bold"> La Alianza - The Rose King's</h5>
+                  <p class="text-muted small">Instalaciones deportivas El Juncal</p>
+              </div>
+          </div>
           </div>
           <div class="carousel-item active">
-            <div class="card text-center p-3">
-              <div class="d-flex justify-content-around align-items-center w-100">
-                <img src="assets/img/latido.svg" alt="Escudo Equipo 1" class="img-fluid w-35 w-md-25">
-                <div class="result-box shadow p-3 rounded bg-light">
-                  <h4 class="m-0"></h4>
-                </div>
-                <h4 class="m-0">-</h4>
-                <div class="result-box shadow p-3 rounded bg-light">
-                  <h4 class="m-0"></h4>
-                </div>
-                <img src="assets/img/2.png" alt="Escudo Equipo 2" class="img-fluid w-35 w-md-25">
+            <div class="card text-center p-3 bg-light shadow">
+              <!-- Fecha y día -->
+              <div class="d-flex justify-content-start align-items-center bg-primary text-white p-2 rounded-top" style="background: linear-gradient(45deg, #F21E90, #C71585, #F21E90); color: white; font-weight: bold;">
+                  <h2 class="m-0 px-2">18</h2>
+                  <div class="text-left">
+                      <h6 class="m-0 text-uppercase">Martes</h6>
+                      <p class="m-0">Febrero</p>
+                  </div>
               </div>
-              <div class="result-box shadow p-3 rounded bg-light">
-                <p class="mt-2"><i class="fas fa-calendar-alt"></i><b>18/02/2025</b></p>
+          
+              <!-- Competición -->
+              <div class="mt-2">
+                  <h5 class="text-danger font-weight-bold">LIGA REGULAR SENIOR</h5>
+                  <p class="text-muted small">DIVISIÓN DE PLATA</p>
               </div>
-              <div class="result-box shadow p-3 rounded bg-light">
-                <p><i class="fas fa-map-marker-alt"></i><b>Instalaciones deportivas El Juncal</b></p>
+          
+              <!-- Resultado -->
+              <div class="d-flex justify-content-center align-items-center w-100">
+                  <img src="assets/img/LATIDOSFC (2).svg" alt="Escudo Equipo 1" class="img-fluid w-25">
+                  <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
+                      <h4 class="m-0">20</h4>
+                  </div>
+                  <h4 class="m-0">:</h4>
+                  <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
+                      <h4 class="m-0">30</h4>
+                  </div>
+                  <img src="assets/img/2.png" alt="Escudo Equipo 2" class="img-fluid w-25">
               </div>
-            </div>
+          
+              <!-- Información adicional -->
+              <div class="mt-2">
+                  <h5 class="font-weight-bold"> Latidos F.C - The Rose King's</h5>
+                  <p class="text-muted small">Instalaciones deportivas El Juncal</p>
+              </div>
+          </div>
           </div>
         </div>
         <button class="carousel-control-prev position-absolute start-0" type="button" data-bs-target="#partidosCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon d-none d-md-block" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next position-absolute end-0" type="button" data-bs-target="#partidosCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon d-none d-md-block" aria-hidden="true"></span>
-        </button>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next position-absolute end-0" type="button" data-bs-target="#partidosCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+      
       </div>
     </section>
     
