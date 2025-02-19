@@ -24,6 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Vina+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link rel="icon" type="image/png" sizes="100x100" href="assets/img/2.png">
@@ -141,6 +142,92 @@
     filter: invert(1); /* Invierte el color para que sea negro */
 }
 
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.player-card {
+    position: relative;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #000;
+    color: white;
+    background: linear-gradient(135deg, #F21E90, #E0E0E0);
+}
+.player-img {
+    width: 100%;
+    display: block;
+}
+.player-info {
+  font-family: "Vina Sans", serif;
+  font-size: 25px;
+  font-style: normal;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+   align-items: center;
+    
+}
+
+.nombres{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.nombre{
+  font-size: 35px;
+}
+.hover-info {
+  font-family: "Vina Sans", serif;
+  font-style: normal;
+  font-size: 20px;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    transition: bottom 0.3s ease-in-out;
+}
+.player-card:hover .hover-info {
+    bottom: 0;
+}
+
+.player-number {
+  font-family: "Vina Sans", serif;
+  font-weight: 700;
+  font-style: normal;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    font-weight: bold;
+    opacity: 0.7;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    
+}
 
     
   </style>
@@ -521,7 +608,7 @@
               </div>
           </div>
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item ">
             <div class="card text-center p-3 bg-light shadow">
               <!-- Fecha y día -->
               <div class="d-flex justify-content-start align-items-center bg-primary text-white p-2 rounded-top" style="background: linear-gradient(45deg, #F21E90, #C71585, #F21E90); color: white; font-weight: bold;">
@@ -542,11 +629,11 @@
               <div class="d-flex justify-content-center align-items-center w-100">
                   <img src="assets/img/LATIDOSFC (2).svg" alt="Escudo Equipo 1" class="img-fluid w-25">
                   <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
-                      <h4 class="m-0">20</h4>
+                      <h4 class="m-0">6</h4>
                   </div>
                   <h4 class="m-0">:</h4>
                   <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
-                      <h4 class="m-0">30</h4>
+                      <h4 class="m-0">2</h4>
                   </div>
                   <img src="assets/img/2.png" alt="Escudo Equipo 2" class="img-fluid w-25">
               </div>
@@ -554,6 +641,43 @@
               <!-- Información adicional -->
               <div class="mt-2">
                   <h5 class="font-weight-bold"> Latidos F.C - The Rose King's</h5>
+                  <p class="text-muted small">Instalaciones deportivas El Juncal</p>
+              </div>
+          </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="card text-center p-3 bg-light shadow">
+              <!-- Fecha y día -->
+              <div class="d-flex justify-content-start align-items-center bg-primary text-white p-2 rounded-top" style="background: linear-gradient(45deg, #F21E90, #C71585, #F21E90); color: white; font-weight: bold;">
+                  <h2 class="m-0 px-2">25</h2>
+                  <div class="text-left">
+                      <h6 class="m-0 text-uppercase">Martes</h6>
+                      <p class="m-0">Febrero</p>
+                  </div>
+              </div>
+          
+              <!-- Competición -->
+              <div class="mt-2">
+                  <h5 class="text-danger font-weight-bold">LIGA REGULAR SENIOR</h5>
+                  <p class="text-muted small">DIVISIÓN DE PLATA</p>
+              </div>
+          
+              <!-- Resultado -->
+              <div class="d-flex justify-content-center align-items-center w-100">
+                  <img src="assets/img/2.png" alt="Escudo Equipo 1" class="img-fluid w-25">
+                  <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
+                      <h4 class="m-0">21</h4>
+                  </div>
+                  <h4 class="m-0">:</h4>
+                  <div class="result-box shadow p-3 rounded bg-dark text-white mx-2">
+                      <h4 class="m-0">30</h4>
+                  </div>
+                  <img src="assets/img/newyorkyonkis.svg" alt="Escudo Equipo 2" class="img-fluid w-25">
+              </div>
+          
+              <!-- Información adicional -->
+              <div class="mt-2">
+                  <h5 class="font-weight-bold">The Rose King's - New York Yonkis</h5>
                   <p class="text-muted small">Instalaciones deportivas El Juncal</p>
               </div>
           </div>
@@ -569,10 +693,33 @@
       </div>
     </section>
     
-    <!-- EMPIEZA INFO VENTA -->
-    <section class="boletin">
-     
-    </section>
+    <!-- EMPIEZA JUGADORES -->
+    <section data-aos="zoom-in-up">
+      <div class="carousel-container">
+          <div class="carousel">
+              <!-- Tarjeta de jugador -->
+              <div class="player-card marginizquierda">
+                <div class="player-number">10</div>
+                  <img src="assets/img/iconopersona.svg" alt="Jugador" class="player-img">
+                  <div class="player-info">
+                    <div class="nombres">
+                      <p class="name">Cristian <p class="nombre"><strong>REY</strong></p></p>
+                    </div>
+                      <div>
+                        <p class="position">Atacante</p>
+                      </div>
+                      
+                  </div>
+                  <div class="hover-info">
+                      <p>Goles: 45</p>
+                      <p>Asistencias: 25 </p>
+                      <p>Edad: 20 años</p>
+                  </div>
+              </div>
+              <!-- Puedes duplicar y modificar más tarjetas para más jugadores -->
+          </div>
+      </div>
+  </section>
     
     
     <!-- ACABA INFO VENTA -->
