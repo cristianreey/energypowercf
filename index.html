@@ -261,6 +261,51 @@
     
 }
 
+#PLANTILLA{
+  display: flex;
+            justify-content: center;
+}
+.container-plantilla {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            flex-direction: column;
+            
+        }
+        .field-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .field-image {
+            width: 100%;
+            max-width: 600px;
+        }
+        .field {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .player {
+            position: absolute;
+            padding: 10px;
+            width: 17%;
+            background-color: transparent;
+            
+            cursor: pointer;
+        }
+        .bench {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .jugador{
+          width: 100%;
+        }
     
   </style>
 
@@ -977,6 +1022,51 @@
           </div>
       </div>
   </section>
+
+  <section id="PLANTILLA" data-aos="zoom-in-up" class="d-none">
+    <div class="col-md-12 container-plantilla d-flex justify-content-center">
+      <div class="field-container">
+          <img src="assets/img/campo.svg" alt="Campo de Fútbol" class="field-image">
+          <div class="field">
+              <div class="player" style="top: 0%; left: 45%;" onclick="selectPlayer(this)"><img src="assets/img/jugador.png" alt="Campo de Fútbol" class="jugador"></div>
+              <div class="player" style="top: 20%; left: 20%;" onclick="selectPlayer(this)"><img src="assets/img/jugador.png" alt="Campo de Fútbol" class="jugador"></div>
+              <div class="player" style="top: 20%; left: 45%;" onclick="selectPlayer(this)"><img src="assets/img/jugador.png" alt="Campo de Fútbol" class="jugador"></div>
+              <div class="player" style="top: 20%; left: 70%;" onclick="selectPlayer(this)"><img src="assets/img/jugador.png" alt="Campo de Fútbol" class="jugador"></div>
+              <div class="player" style="top: 40%; left: 30%;" onclick="selectPlayer(this)"><img src="assets/img/jugador.png" alt="Campo de Fútbol" class="jugador"></div>
+              <div class="player" style="top: 40%; left: 60%;" onclick="selectPlayer(this)"><img src="assets/img/jugador.png" alt="Campo de Fútbol" class="jugador"></div>
+              <div class="player" style="top: 60%; left: 45%;" onclick="selectPlayer(this)"><img src="assets/img/jugador.png" alt="Campo de Fútbol" class="jugador"></div>
+          </div>
+      </div>
+      <div class="bench">
+          <div class="player" style="top: 90%; left: 0%;" onclick="selectPlayer(this)"><img src="assets/img/jugador.png" alt="Campo de Fútbol" class="jugador"></div>
+          <div class="player" style="top: 90%; left: 25%;" onclick="selectPlayer(this)"><img src="assets/img/jugador.png" alt="Campo de Fútbol" class="jugador"></div>
+          <div class="player" style="top: 90%; left: 50%;" onclick="selectPlayer(this)"><img src="assets/img/jugador.png" alt="Campo de Fútbol" class="jugador"></div>
+          <div class="player" style="top: 90%; left: 75%;" onclick="selectPlayer(this)"><img src="assets/img/jugador.png" alt="Campo de Fútbol" class="jugador"></div>
+          <div class="player" style="top: 90%; left: 100%;" onclick="selectPlayer(this)"><img src="assets/img/jugador.png" alt="Campo de Fútbol" class="jugador"></div>
+      </div>
+  </div>
+   
+  <script>
+    let selectedPlayer = null;
+    function selectPlayer(player) {
+        if (!selectedPlayer) {
+            selectedPlayer = player;
+            player.style.background = "yellow";
+        } else {
+            // Intercambiar posiciones
+            let tempTop = selectedPlayer.style.top;
+            let tempLeft = selectedPlayer.style.left;
+            selectedPlayer.style.top = player.style.top;
+            selectedPlayer.style.left = player.style.left;
+            player.style.top = tempTop;
+            player.style.left = tempLeft;
+            
+            selectedPlayer.style.background = "white";
+            selectedPlayer = null;
+        }
+    }
+</script>
+</section>
     
     
     <!-- ACABA INFO VENTA -->
